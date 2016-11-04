@@ -3,6 +3,11 @@ package log4j2.com.controller;
 import log4j2.com.foo.Bar;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.core.LoggerContext;
+import org.apache.logging.log4j.core.config.ConfigurationFactory;
+
+import java.net.URI;
+import java.net.URISyntaxException;
 
 // Import log4j classes.
 
@@ -15,7 +20,6 @@ public class MyApp {
     public static void main(final String... args) {
 
         // Set up a simple configuration that logs on the console.
-
         logger.trace("Entering application.");
         Bar bar = new Bar();
         if (!bar.doIt()) {
