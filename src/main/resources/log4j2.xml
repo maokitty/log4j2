@@ -6,8 +6,7 @@
         </Console>
     </Appenders>
     <Loggers>
-        <!--添加logger,设置专属的日志打印方式。不添加appender会默认继承父Logger.没有设置additivity=false会导致日志输出两次-->
-        <Logger name="log4j2.com.foo.Bar" level="trace" additivity="false">
+        <Logger name="log4j2.com.controller.MyApp" level="verbose" additivity="false">
             <AppenderRef ref="Console"/>
         </Logger>
         <Root level="error">
