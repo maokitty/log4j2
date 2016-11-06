@@ -5,6 +5,9 @@
             <PatternLayout pattern="%d{HH:mm:ss} [%t] %-5level %logger{36} - %msg%n"/>
         </Console>
     </Appenders>
+    <CustomLevels>
+        <CustomLevel name="VERBOSE" intLevel="550"/>
+    </CustomLevels>
     <Loggers>
         <Logger name="log4j2.com.controller.MyApp" level="verbose" additivity="false">
             <AppenderRef ref="Console"/>

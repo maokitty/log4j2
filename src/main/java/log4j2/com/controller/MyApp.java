@@ -10,8 +10,7 @@ import org.apache.logging.log4j.Logger;
 public class MyApp {
 
     public static void main(final String... args) {
-        final Level VERBOSE = Level.forName("VERBOSE", 550);
         final Logger logger = LogManager.getLogger();
-        logger.log(VERBOSE, "a verbose message");
+        logger.log(Level.getLevel("VERBOSE"), "a verbose message");
     }
 }
