@@ -1,6 +1,7 @@
 log4j2项目说明
 官方文档 http://logging.apache.org/log4j/2.x/manual/customconfig.html
-通过 git checkout v1/v2/... 查看不同的版本
+git tag可查看历史版本，现在包括v1/v2/v3/v4/v5/v6/v7
+git checkout v1/v2/... 查看不同的版本
 
 
 log4j2使用：
